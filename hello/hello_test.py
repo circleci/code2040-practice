@@ -1,7 +1,12 @@
+import unittest
+
 from .hello_app import app
 
 
-def test_app():
-    tc = app.test_client()
-    response = tc.get('/')
-    assert 'Hello' in response.data
+class HelloTest(unittest.TestCase):
+
+    def setUp(self):
+        self.app = app.test_client()
+
+    def test_root(self):
+        assert 'Hello' in self.app.get('/').data
