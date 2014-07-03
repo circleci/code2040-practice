@@ -4,7 +4,7 @@ heroku-cd
 This project is an example of an application that can be continuously delivered to Heroku through a pipeline based on staging and production environments.
 
 ##The Video
-A step-by-step walkthrough video detailing how to set the project up on CircleCI and Heroku is HERE.
+A step-by-step walkthrough video detailing how to set the project up on [CircleCI](https://circleci.com/) and Heroku is HERE.
 
 ##Installing and running locally
 * Clone the repo
@@ -14,7 +14,7 @@ A step-by-step walkthrough video detailing how to set the project up on CircleCI
 * Refer to the [Heroku docs](https://devcenter.heroku.com/articles/getting-started-with-python) for information on deploying to Heroku from the command line
 
 ##Deployment with CircleCI
-First, sign up for CircleCI if you haven’t already, fork the repo, and follow it from CircleCI.
+First, sign up for [CircleCI](https://circleci.com/) if you haven’t already, fork the repo, and follow it from CircleCI.
 There is [a detailed doc](https://circleci.com/docs/continuous-deployment-with-heroku) in the CircleCI docs about deployment to Heroku. But the three simple steps you need to perform are:
 1. Enter your Heroku API key in the “Heroku” section of the settings for your project on CircleCI
 2. Setup an SSH key for deployment to Heroku (CircleCI makes this very easy)
@@ -24,6 +24,7 @@ There is [a detailed doc](https://circleci.com/docs/continuous-deployment-with-h
 This project implements continuous delivery with a pipeline based on “staging” and “master” branches that correspond to “staging” and “prod” heroku environments respectively. Feature branches that are ready to merge can first go into staging, where they will built by CircleCI and automatically deployed to the Heroku staging environment. Once deployed to staging, any number of automated or even manual tests can be run before merging into master to push new features into production. Each merge is performed manually in this project, but the merge from staging to master, for example, could be automated.
 
 ##See Also
+* [CircleCI](https://circleci.com/)
 * The [virtualenv](http://virtualenv.readthedocs.org/en/latest/) and [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/) docs
 * [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) and [Managing Multiple Environments for an App](https://devcenter.heroku.com/articles/multiple-environments) articles from the [Heroku Dev Center](https://devcenter.heroku.com/)
 * [Testing Flask Applications](http://flask.pocoo.org/docs/testing/) from the Flask docs
