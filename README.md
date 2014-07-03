@@ -16,6 +16,7 @@ A step-by-step walkthrough video detailing how to set the project up on [CircleC
 ##Deployment with CircleCI
 First, sign up for [CircleCI](https://circleci.com/) if you haven’t already, fork the repo, and follow it from CircleCI.
 There is [a detailed doc](https://circleci.com/docs/continuous-deployment-with-heroku) in the CircleCI docs about deployment to Heroku. But the three simple steps you need to perform are:
+
 1. Enter your Heroku API key in the “Heroku” section of the settings for your project on CircleCI
 2. Setup an SSH key for deployment to Heroku (CircleCI makes this very easy)
 3. Configure your circle.yml file to deploy to Heroku. See circle.yml file in this project for an example (you will need to choose different app names depending on what your apps are called in Heroku).
