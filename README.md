@@ -3,9 +3,6 @@ heroku-cd
 
 This project is an example of an application that can be continuously delivered to Heroku through a pipeline based on staging and production environments.
 
-##The Video
-A step-by-step walkthrough video detailing how to set the project up on [CircleCI](https://circleci.com/) and Heroku is HERE.
-
 ##Installing and running locally
 * Clone the repo
 * Run `pip install -r requirements.txt` (preferably inside a virtualenv) to install the dependencies
