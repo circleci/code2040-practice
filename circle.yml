@@ -2,8 +2,4 @@ deployment:
   prod:
     branch: master
     heroku:
-      appname: circle-hello
-  staging:
-    branch: staging
-    heroku:
-      appname: circle-hello-staging
+      appname: hidden-crag-73794
