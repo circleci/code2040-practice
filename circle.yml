@@ -2,4 +2,4 @@ deployment:
   prod:
     branch: master
     heroku:
-      appname: hidden-crag-73794
+      appname: circleci-demo 
